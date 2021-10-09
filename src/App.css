@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Profile Data styles */
+
+.profileContainer {
+	height: 40vh;
+}
+
+.profile {
+	width: 30%;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0 auto;
+}
+
+.profilePicContainer {
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+}
+
+.profilePic {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.profileData {
+	grid-column: 1 / 5;
+	grid-row: 2 / 3;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-self: center;
+	gap: 3px;
+}
+
+.profileName {
+	grid-column: 1 / 7;
+	grid-row: 1 / 2;
+	text-align: center;
+}
+
+.profileLink {
+	grid-column: 1 / 7;
+	grid-row: 2 / 3;
+	text-align: center;
+}
+
+.profileTag {
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+	justify-self: end;
+}
+
+.profileInfo {
+	grid-column: 4 / 7;
+	grid-row: 3 / 4;
+}
+
+.profileFollowers {
+	grid-column: 1 / 4;
+	grid-row: 4 / 5;
+	justify-self: end;
+}
+
+.profileFollowing {
+	grid-column: 4 / 7;
+	grid-row: 4 / 5;
+}
+
+.profileName {
+	font-size: 2rem;
+}
+
+.profileName,
+.profileLink,
+.profileFollowers,
+.profileFollowing,
+.followButton {
+	font-weight: bold;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* Profile Data styles */
+
+/*Profile Nav styles */
+.profileNav {
+	grid-column: 1 / 5;
+	grid-row: 3 / 4;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: center;
+}
+
+.shareButton {
+	font-size: 1.5rem;
+}
+
+.shareButtonIcon {
+	padding-left: 1px;
+}
+
+.shareButtonBackground {
+	color: rgba(0, 0, 0, 0);
+}
+
+.shareButtonBackground:hover {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.followButton {
+	display: flex;
+	padding: 15px 20px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px;
+	color: white;
+	background-color: #e60023;
+}
+
+.followButton:hover {
+	background-color: #a40019;
+}
+
+/*Profile Nav styles */
+
+/* Nav styles 1 */
+
+/* .Nav {
+	display: grid;
+	grid-template-columns: 3% 7% 5% 70% 6% 6% 5%;
+	grid-template-rows: 5vh;
+	margin: 10px 5px;
+  font-size: 1.3rem;
+}
+
+.logoContainer {
+	width: 70%;
+  height: 70%;
+  margin: auto;
+  padding-left: 28px;
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+}
+
+.Nav .title a {
+  color: #e60023;
+}
+
+.Nav a {
+  font-weight: bold;
+}
+
+.title, .exploreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signButton a {
+  color: white;
+}
+
+.signButton {
+  background-color: #e60023;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.signButton:hover {
+  background-color: #a40019;
+}
+
+.logButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #EEEFEE;
+}
+
+.logButton:hover {
+  background-color: #E2E2E2;
+}
+
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.dropdownButtonBackground {
+	color: rgba(0, 0, 0, 0);
+}
+
+.dropdownButtonBackground:hover {
+	color: rgba(0, 0, 0, 0.1);
+} */
+
+/* Nav styles 1 */
+
+/* Nav styles 2 */
+.Nav {
+	display: flex;
+	font-size: 1.3rem;
+	margin: 15px;
+}
+
+.navLeftPart,
+.navRightPart {
+	display: flex;
+	flex: 1 1 0;
+	justify-content: space-evenly;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.navLeftPart div,
+.navRightPart div {
+	margin: 0px 5px;
+}
+
+.logoWithTitle {
+	display: flex;
+}
+
+.search {
+	display: flex;
+	flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  border: 2px solid #DDDDDD;
+  border-radius: 24px;
+}
+
+.search div {
+  margin-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchInputField {
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 1.1rem;
+  max-width: 90%;
+}
+
+.searchInputFieldDiv {
+  flex: 1 1 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    display: none;
+  }
+}
+
+.searchInputField {
+	width: 100%;
+}
+
+.logo {
+	height: 24px;
+	width: 24px;
+}
+
+.Nav .title a {
+	color: #e60023;
+}
+
+.Nav a {
+	font-weight: bold;
+}
+
+.signButton a {
+	color: white;
+}
+
+.signButton {
+	background-color: #e60023;
+	border-radius: 24px;
+}
+
+.signButton:hover {
+	background-color: #a40019;
+}
+
+.logButton,
+.signButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.logButton {
+	border-radius: 24px;
+	background-color: #eeefee;
+}
+
+.logButton:hover {
+	background-color: #e2e2e2;
+}
+
+.dropdownButtonBackground {
+	color: rgba(0, 0, 0, 0);
+}
+
+.dropdownButtonBackground:hover {
+	color: rgba(0, 0, 0, 0.1);
+}
+/* Nav styles 2 */
