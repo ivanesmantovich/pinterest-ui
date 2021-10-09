@@ -6,10 +6,6 @@ body {
 
 /* Profile Data styles */
 
-.profileContainer {
-	height: 40vh;
-}
-
 .profile {
 	width: 30%;
 	padding: 20px;
@@ -130,88 +126,7 @@ a {
 .followButton:hover {
 	background-color: #a40019;
 }
-
 /*Profile Nav styles */
-
-/* Nav styles 1 */
-
-/* .Nav {
-	display: grid;
-	grid-template-columns: 3% 7% 5% 70% 6% 6% 5%;
-	grid-template-rows: 5vh;
-	margin: 10px 5px;
-  font-size: 1.3rem;
-}
-
-.logoContainer {
-	width: 70%;
-  height: 70%;
-  margin: auto;
-  padding-left: 28px;
-}
-
-.logo {
-	width: 100%;
-	height: 100%;
-}
-
-.Nav .title a {
-  color: #e60023;
-}
-
-.Nav a {
-  font-weight: bold;
-}
-
-.title, .exploreButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.signButton a {
-  color: white;
-}
-
-.signButton {
-  background-color: #e60023;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-}
-
-.signButton:hover {
-  background-color: #a40019;
-}
-
-.logButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-  background-color: #EEEFEE;
-}
-
-.logButton:hover {
-  background-color: #E2E2E2;
-}
-
-.dropdownButton {
-  display: flex;
-  align-items: center;
-  padding-top: 5px;
-}
-
-.dropdownButtonBackground {
-	color: rgba(0, 0, 0, 0);
-}
-
-.dropdownButtonBackground:hover {
-	color: rgba(0, 0, 0, 0.1);
-} */
-
-/* Nav styles 1 */
 
 /* Nav styles 2 */
 .Nav {
@@ -241,35 +156,35 @@ a {
 .search {
 	display: flex;
 	flex: 1 1 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 5px;
-  border: 2px solid #DDDDDD;
-  border-radius: 24px;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 5px;
+	border: 2px solid #dddddd;
+	border-radius: 24px;
 }
 
 .search div {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
 input:focus {
-  outline: none;
+	outline: none;
 }
 
 .searchInputField {
-  border-color: rgba(0, 0, 0, 0);
-  font-size: 1.1rem;
-  max-width: 90%;
+	border-color: rgba(0, 0, 0, 0);
+	font-size: 1.1rem;
+	max-width: 90%;
 }
 
 .searchInputFieldDiv {
-  flex: 1 1 100%;
+	flex: 1 1 100%;
 }
 
 @media screen and (max-width: 700px) {
-  .search {
-    display: none;
-  }
+	.search {
+		display: none;
+	}
 }
 
 .searchInputField {
@@ -283,6 +198,15 @@ input:focus {
 
 .Nav .title a {
 	color: #e60023;
+}
+
+.explore {
+  padding: 10px;
+  border-radius: 24px;
+}
+
+.explore:hover {
+  background-color: #e2e2e2;
 }
 
 .Nav a {
@@ -329,3 +253,75 @@ input:focus {
 	color: rgba(0, 0, 0, 0.1);
 }
 /* Nav styles 2 */
+
+/* Cards styles */
+.cardsContainer {
+  padding: 10px;
+	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardsContainer .card {
+  flex-shrink: 0;
+  /* flex-basis: auto; */
+  margin-right: 5px;
+}
+
+.card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 100px;
+	width: 350px;
+	height: 300px;
+}
+
+.pics {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.pics .pic1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pics .pic2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-size: cover;
+  border-top-right-radius: 10px;
+}
+
+.pics .pic3 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-size: cover;
+  border-bottom-right-radius: 10px;
+}
+
+.cardData {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.cardData {
+  padding: 5px;
+}
+
+.cardData .title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.cardData .time {
+  color: #848484
+}
+
+/* Cards styles */
