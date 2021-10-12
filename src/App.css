@@ -245,7 +245,26 @@ input:focus {
 	background-color: #e2e2e2;
 }
 
+.dropdownButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dropdownButtonIcon {
+	position: absolute;
+	left: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .dropdownButtonBackground {
+	position: absolute;
+	left: -12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: rgba(0, 0, 0, 0);
 }
 
